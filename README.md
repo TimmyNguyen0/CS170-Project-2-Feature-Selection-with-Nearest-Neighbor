@@ -6,3 +6,5 @@ Figure 1: Example of nearest neighbor. Notice how the green dot is closest to a 
 This assignment is the second project in Dr. Eamonn Keogh’s Introduction to AI course at the University of California, Riverside, during the Winter quarter of 2026 [2]. The following report details my findings for the project. In this project, I implemented three algorithms: an accuracy algorithm using Nearest Neighbor and Leave-one-out-cross-validation (LOOCV), and two search algorithms (Forward Selection and Backwards Elimination).  My language of choice for the program is C++14, and the full source code for the project is included in my repository. The link to the repository can be found in the intro and once again at the end of the report. This report compares the forward selection and backwards elimination search algorithms while using accuracy based on the nearest neighbor algorithm.
 
 To run, use Visual Studio 2019 or any other compiler.
+
+Output for the datasets can be found in "Text Files Containing Output"
