@@ -8,3 +8,6 @@ This assignment is the second project in Dr. Eamonn Keogh’s Introduction to AI
 To run, use Visual Studio 2019 or any other compiler.
 
 Output for the datasets can be found in "Text Files Containing Output"
+
+[1] Feature Selection (by Ivan Belcic, Ibm.com)
+[2] CS170 Project 1 Specifications (by Dr. Eamonn Keogh, 2026)
