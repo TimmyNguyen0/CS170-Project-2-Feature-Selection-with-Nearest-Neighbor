@@ -134,6 +134,8 @@ bool is_current_feature(const vector<int>& current_features, int feature) {
 }
 
 // Function calculates the accuracy based on the provided features
+// Leave-one-out-cross-validation occurs here. (Picks one feature at a time to test
+// until it has picked all features)
 double find_accuracy(vector<vector<double>>& data, vector<int> feature_to_test) {
     if (feature_to_test.empty()) return 0.0;
 
@@ -165,7 +167,7 @@ double find_accuracy(vector<vector<double>>& data, vector<int> feature_to_test) 
                 nearest_neighbor_label = (int)data[j][0];
             }
         }
-        // Incrememnt the number correctly classified by 1 if the nearest neighbor has the same label as the object
+        // Increment the number correctly classified by 1 if the nearest neighbor has the same label as the object
         if (label_object_to_classify == nearest_neighbor_label) {
             number_correctly_classified++;
         }
