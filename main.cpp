@@ -134,8 +134,8 @@ bool is_current_feature(const vector<int>& current_features, int feature) {
 }
 
 // Function calculates the accuracy based on the provided features
-// Leave-one-out-cross-validation occurs here. (Picks one feature at a time to test
-// until it has picked all features)
+// Leave-one-out-cross-validation occurs here. (Hides selected object so the nearest neighbor isn't itself)
+// Nearest neighbor is also found here using the Euclidean distance
 double find_accuracy(vector<vector<double>>& data, vector<int> feature_to_test) {
     if (feature_to_test.empty()) return 0.0;
 
